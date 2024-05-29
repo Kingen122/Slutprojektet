@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravara Restaurang</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxBO2vzxrP1k9lMm4XeItZNlEUMTjq6do&callback=initMap" async defer></script>
+    <script src="map.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hem">Hem</a></li>
+                <li><a href="#boka">Boka</a></li>
+                <li><a href="#meny">Meny</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hem">
+            <h2>RåVARA</h2>
+            <p>Välkommen till vår restaurang där vi erbjuder en unik matupplevelse.</p>
+            <p>Här kan du upptäcka våra elevers fantastiska matupplevelser</p>
+            <p>Boka ditt bord idag och se fram emot en oförglömlig kväll.</p>
+        </section>
+        <section id="boka">
+            <h2>Boka Bord</h2>
+        <form id="booking-form" onsubmit="return validateForm()">
+            <input type="text" id="name" name="name" placeholder="Ditt namn" required>
+            <input type="email" id="email" name="email" placeholder="Din e-post" required>
+            <input type="tel" id="phone" name="phone" placeholder="Ditt telefonnummer" required>
+            <textarea id="message" name="message" placeholder="Eventuella önskemål"></textarea>
+            <button type="submit">Skicka bokning</button>
+        </form>
+        <div id="error-messages" style="color: red;"></div>
+        </section>
+        </div>
+        
+            <div class="container">
+            <div id="map"></div>
+        </div>
+        <section id="meny">
+            <h2>Meny</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Förätter</th>
+                        <th>Varmrätter</th>
+                        <th>Efterrätter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Skagen Toast</td>
+                        <td>Kötbullar med mos</td>
+                        <td>Äppelkaka med glass</td>
+                    </tr>
+                    <tr>
+                        <td>Risotto med räkor</td>
+                        <td>Helstek oxfile</td>
+                        <td>Prinsesstårta</td>
+                    </tr>
+                    <tr>
+                        <td>Kräftrisotto</td>
+                        <td>Pasta carbonara</td>
+                        <td>Kladdkaka</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </section>
+        
+  
+            </div>
+            
+        </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Har ni frågor eller liknande, tveka inte på att höra av er</p>
+            <p>Ni hittar våran kontaktinfo i boxen nedan</p>
+            <div class="kontakt-box">
+                <p><strong>Adress:</strong> Åva Gymnasium, Gymnasievägen 2, 183 34 Täby</p>
+                <p><strong>Telefonnummer:</strong> 08-123 456 78</p>
+                <p><strong>E-post:</strong> info@avagymnasium.se</p>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>© 2024 Ravara Restaurang</p>
+    </footer>
+</body>
+</html>

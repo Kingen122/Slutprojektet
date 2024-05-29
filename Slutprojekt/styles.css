@@ -1,0 +1,205 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+#hem {
+    background-image: url('rest.jpg');
+    background-size: cover;
+    color: #fff;
+}
+/*NAVBAREN*/
+header {
+    background-image: url('common-background.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 50px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    position: -webkit-sticky; /* För Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+
+
+#hem {
+    padding: 100px 0;
+}
+
+
+
+
+main section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1em;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+/*BOKA BORD */
+#booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+#booking-form input,
+#booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#booking-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #cc5d3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#booking-form button:hover {
+    background-color: #4cae4c;
+}
+
+
+/* Centrerar kartan med Flexbox */
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+#map {
+    height: 400px; 
+    width: 80%; 
+    
+   
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.kontakt-box {
+    background-color: #f2f2f2; 
+    border: 1px solid #dcdcdc; 
+    border-radius: 8px; 
+    padding: 20px; 
+    max-width: 400px; 
+    margin: 20px auto; 
+    box-shadow: 15px 10px 15px rgba(180, 111, 54, 0.1); 
+}
+
+.kontakt-box p {
+    font-size: 1em; 
+    line-height: 1.6; 
+    margin: 10px 0; 
+}
+
+#kontakt {
+
+    margin-top: 100px;
+    margin-bottom: 200px; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h2 {
+    animation: fadeIn 2s ease-in forwards;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+thead tr {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tfoot tr {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+  
